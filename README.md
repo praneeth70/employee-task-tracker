@@ -1,111 +1,72 @@
- Employee Task Tracker
+# 📘 Employee Task Tracker
 
-A production-ready Full Stack Web Application designed for corporate task management and employee performance tracking. Built with a scalable Monorepo architecture.
+A modern full-stack application designed to help teams manage employees and track tasks with clarity and efficiency.  
+Built with a clean backend architecture and a polished UI, the system provides real-time visibility into workload, progress, and performance.
 
-🚀 Live Deployment
+---
 
-Component
+## ✨ Features
 
-Status
+### 📊 Dashboard
+- Overview of total, completed, and pending tasks  
+- Success rate & performance metrics  
+- Smooth UI with clean, modern components  
 
-URL
+### 👥 Employee Management
+- Add and manage employee records  
+- View complete task history for each employee  
+- Filter logs by priority and status  
+- Elegant modal UI for performance insights  
 
-Frontend (App)
+### 📝 Task Management
+- Create tasks with title, description, due date, and priority  
+- Assign tasks to employees  
+- Change status: **To-Do → In-Progress → Completed → Failed**  
+- Filter tasks by employee or status  
+- Fast and responsive interface using Tailwind CSS  
 
-🟢 Online
+---
 
-Visit Live App
+## 🧰 Tech Stack
 
-Backend (API)
+### **Frontend**
+- React (Vite)
+- Tailwind CSS
+- Lucide Icons
 
-🟢 Online
+### **Backend**
+- Node.js  
+- Express.js  
+- PostgreSQL (Supabase)  
+- REST API (MVC Pattern)
 
-API Endpoint
+### **Deployment**
+- Frontend → Vercel  
+- Backend → Render  
+- GitHub CI/CD  
 
-⚠️ Performance Note: The backend is hosted on a free-tier Render instance. It may take 15–30 seconds to "wake up" upon the first request. Please allow a moment for the server to spin up; subsequent requests will be instantaneous.
+---
 
-📸 Application Screenshots
+## 🚀 Live Demo
 
-Executive Dashboard
+| Component | Status | URL |
+|----------|--------|-----|
+| Frontend (Live App) | 🟢 Online | https://employee-task-tracker-za4x.vercel.app |
+| Backend API | 🟢 Online | https://employee-task-tracker-f0gp.onrender.com/api |
 
-Task Management Board
+> ⚠️ **Note:** Backend runs on free Render tier → may take **15–30 seconds** to wake on first request.
 
+---
 
+## 🛠️ Local Setup Guide
 
+### 1️⃣ Clone the repository
 
+#👨‍💻 Author
 
-Real-time metrics & KPIs
+##Kalluru Praneeth Kumar Reddy
 
-Drag-and-drop style status updates
-
-✨ Key Features
-
-📊 1. Executive Dashboard
-
-Real-Time Analytics: Live counters for Total, Completed, and Pending tasks.
-
-Visual Insights: Color-coded status cards for immediate performance assessment.
-
-👥 2. Advanced Employee Directory
-
-Centralized Management: CRUD operations for employee records.
-
-Performance History: Detailed modal view showing individual task history.
-
-Smart Filtering: Filter history logs by Status (Finished/Skipped) and Priority (High/Medium).
-
-✅ 3. Dynamic Task Board
-
-Live Status Updates: Instantly change task status (Todo → In Progress → Completed) via dropdowns.
-
-Priority System: Visual badges for High/Medium/Low priority tasks.
-
-Relational Assignment: Tasks are linked to employees via Foreign Keys in PostgreSQL.
-
-🛠️ Technical Architecture
-
-This project follows a Monorepo structure, ensuring code modularity and separation of concerns.
-
-Tech Stack
-
-Layer
-
-Technology
-
-Key Features
-
-Frontend
-
-React.js (Vite)
-
-Blazing fast build tool, Component-based architecture.
-
-Styling
-
-Tailwind CSS
-
-Utility-first CSS, Premium UI with "Inter" font family.
-
-Icons
-
-Lucide React
-
-Lightweight, consistent SVG icons.
-
-Backend
-
-Node.js + Express
-
-Scalable REST API, MVC Pattern.
-
-Database
-
-PostgreSQL (Supabase)
-
-Relational data integrity, Complex queries using pg pool.
-
-DevOps
-
-Vercel + Render
-
-Automated CI/CD pipelines linked to GitHub.
+##GitHub Profile:https://github.com/praneeth70
+```bash
+git clone https://github.com/praneeth70/employee-task-tracker.git
+cd employee-task-tracker
