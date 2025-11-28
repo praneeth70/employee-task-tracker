@@ -1,0 +1,16 @@
+# Dependencies (NEVER upload these)
+node_modules/
+backend/node_modules/
+frontend/node_modules/
+
+# Environment Variables (NEVER upload these - Security Risk!)
+.env
+backend/.env
+frontend/.env
+
+# Build outputs
+dist/
+build/
+
+# System files
+.DS_Store
