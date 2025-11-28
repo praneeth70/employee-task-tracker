@@ -5,6 +5,6 @@
 @tailwind utilities;
 
 body {
-  font-family: 'Inter', sans-serif; /* Fix #8: Premium Font */
+  font-family: 'Inter', sans-serif;
   @apply bg-gray-50 text-gray-900 antialiased;
 }

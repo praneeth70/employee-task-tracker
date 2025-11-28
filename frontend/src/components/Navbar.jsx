@@ -2,22 +2,22 @@ import { Link, useLocation } from 'react-router-dom';
 import { LayoutDashboard, Users, CheckSquare } from 'lucide-react';
 
 export default function Navbar() {
-  const location = useLocation(); // Hook to get current page
+  const location = useLocation(); // Hook to get current page URL
 
-  // Helper to style active links (Fix #9)
+  // Helper function to style links based on whether they are active
   const getLinkClass = (path) => 
     `flex items-center gap-2 px-4 py-2 rounded-md font-medium transition-all duration-200 ${
       location.pathname === path
-        ? "text-blue-600 bg-blue-50 shadow-sm" // Active State
-        : "text-gray-500 hover:text-blue-600 hover:bg-gray-50" // Inactive State
+        ? "text-blue-600 bg-blue-50 shadow-sm" // Active Look
+        : "text-gray-500 hover:text-blue-600 hover:bg-gray-50" // Inactive Look
     }`;
 
   return (
-    <nav className="bg-white border-b border-gray-200 sticky top-0 z-50"> {/* Fix #7: Sticky & Clean */}
+    <nav className="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm">
       <div className="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
-        {/* Logo Area */}
+        {/* Logo Section */}
         <div className="flex items-center gap-2">
-          <div className="bg-blue-600 p-1.5 rounded-lg">
+          <div className="bg-blue-600 p-1.5 rounded-lg shadow-sm">
             <CheckSquare className="w-6 h-6 text-white" />
           </div>
           <span className="text-xl font-bold text-gray-800 tracking-tight">TaskTracker</span>

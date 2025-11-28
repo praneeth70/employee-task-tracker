@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
 import api from '../api/axios';
-import { ClipboardList, CheckCircle, Clock } from 'lucide-react'; // Using Lucide equivalents
+import { ClipboardList, CheckCircle, Clock } from 'lucide-react'; // Premium Icons
 
 export default function Dashboard() {
   const [stats, setStats] = useState({ totalTasks: 0, completedTasks: 0, pendingTasks: 0 });
-  const [loading, setLoading] = useState(true); // Fix #10: Loading State
+  const [loading, setLoading] = useState(true); // Loading state
 
   useEffect(() => {
     api.get('/stats')
@@ -18,7 +18,7 @@ export default function Dashboard() {
       });
   }, []);
 
-  // Fix #10: Loading Spinner
+  // Loading Spinner
   if (loading) {
     return (
       <div className="flex justify-center items-center h-screen bg-gray-50">
@@ -28,30 +28,27 @@ export default function Dashboard() {
   }
 
   return (
-    // Fix #3: Subtle Gradient Background
+    // Background Gradient
     <div className="min-h-[calc(100vh-73px)] bg-gradient-to-br from-gray-50 to-gray-100 p-8">
       <div className="max-w-7xl mx-auto">
         
-        {/* Fix #6: Heading & Separator */}
+        {/* Header Section */}
         <div className="mb-8">
           <h2 className="text-3xl font-bold text-gray-800 tracking-tight">Dashboard Overview</h2>
-          <p className="text-gray-500 mt-1">Welcome back, Admin. Here is what's happening today.</p>
+          <p className="text-gray-500 mt-1">Welcome back, Admin. Here is your daily summary.</p>
           <hr className="mt-4 border-gray-200" />
         </div>
         
-        {/* Fix #4: Grid Layout */}
+        {/* Stats Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           
           {/* CARD 1: TOTAL TASKS (Blue) */}
-          {/* Fix #1: Rounded, Shadow, Border-Left */}
-          {/* Fix #2: Hover Scale Animation */}
           <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 border-l-4 border-l-blue-500 hover:shadow-md transition-all transform hover:scale-[1.02]">
             <div className="flex justify-between items-start">
               <div>
                 <p className="text-gray-500 text-sm font-medium uppercase tracking-wider">Total Tasks</p>
                 <p className="text-4xl font-bold text-gray-800 mt-2">{stats.totalTasks}</p>
               </div>
-              {/* Fix #5: Icon */}
               <div className="p-3 bg-blue-50 rounded-lg">
                 <ClipboardList className="w-6 h-6 text-blue-600" />
               </div>
